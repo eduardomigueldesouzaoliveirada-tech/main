@@ -29,7 +29,7 @@ public class Autbancointer {
 	}
 
 	@Test
-	public void test() throws InterruptedException {
+	public void testeaberturadeconta() throws InterruptedException {
 		Thread.sleep(5000);
 	driver.findElement(By.xpath("(//button)[1]")).click();
 		Thread.sleep(3000);
