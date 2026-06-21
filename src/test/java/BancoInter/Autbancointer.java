@@ -46,6 +46,13 @@ public class Autbancointer {
 		driver.findElement(By.cssSelector("body > div.sc-dILkzW.jmczzn > div.sc-hUheUT.eReyjh > div > form > div.sc-jNDflC.RXypR > label")).click();
 		driver.findElement(By.xpath("(//button)[9]")).click();
 	}
-
-
+@Test
+public void testformulariodeconta() throws InterruptedException {
+	Thread.sleep(2000);
+	driver.findElement(By.id("name")) .sendKeys("João Carlos");
+	Thread.sleep(2000);
+	String texto1 = driver.findElement(By.xpath("(//h2)[9]")).getText();
+	assertEquals("Abra agora sua Conta Digital", texto1);
+	System.out.println("valor da variavel texto1:" + texto1);
+}
 }
